@@ -1,95 +1,525 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!-- original js -->
-      <script src="css/cssku.css"></script>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C I N E M U S E !</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/script.js"></script>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>C I N E M U S E !</title>
-    </head>
+</head>
+<body style="background-color: #7a7a7a;">
 
-    <body class="grey darken-1">
-      <!-- Navbar -->
-      <div class="navbar-fixed">
-        <nav class="grey darken-4">
-          <div class="container">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">C I N E M U S E !</a>
-              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                  <li><a href="movies.html">Movies</a></li>
-                  <li><a href="musics.html">Musics</a></li>
-                  <li><a href="books.html">Books</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="guest.html">Guest</a></li>
-                </ul>
-            </div>
-          </div>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">C I N E M U S E !</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Musics</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Guest</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
         </nav>
-      </div>        
 
-      <!-- side nav -->
-      <ul class="sidenav" id="mobile-nav">
-        <li><a href="movies.html">Movies</a></li>
-        <li><a href="musics.html">Musics</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="guest.html">Guest</a></li>
-      </ul>
 
-      <!-- slider -->
-      <div class="slider" >
-        <ul class="slides"  >
-          <li>
-            <img src="img/slider/enjoy.jpg"> 
-            <div class="caption center-align">
-              <h1><b>C I N E M U S E !</b></h1>
-              <h2 class="light grey-text text-lighten-3">All your entertainment needs</h2>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="banner" style="background-image: url(img/slider/enjoy.jpg);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated fadeInDown" style="animation-delay: 1s">C I N E M U S E !</h2>
+                        <h3 class="animated fadeInUp" style="animation-delay: 2s">All Your Entertainment Needs</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url(img/slider/movie.jpg);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated fadeInLeft" style="animation-delay: 1s">Movies</h2>
+                        <h3 class="animated fadeInDown" style="animation-delay: 2s">Marathon some movies? Don't miss the preview before watch them !</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url(img/slider/music.jpg);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated zoomIn" style="animation-delay: 1s">Musics</h2>
+                        <h3 class="animated fadeInLeft" style="animation-delay: 2s">Boost up your day with our music picks</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url(img/slider/book.jpg);"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated zoomIn" style="animation-delay: 1s">Books</h2>
+                        <h3 class="animated fadeInLeft" style="animation-delay: 2s">Wondering what to read? We'll bring you the list !</h3>
+                    </div>
+                </div>
+
             </div>
-          </li>
-          <li>
-            <img src="img/slider/movie.jpg"> 
-            <div class="caption center-align">
-              <h2>Movies</h2>
-              <h5 class="light grey-text text-lighten-3"><b>Marathon some movies? Don't miss the preview before watch them !</b></h5>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </header>
+    <!-- MOVIES -->
+    <div class="container">
+        <div class="container-kontent">
+            <div class="row">
+                <div class="col-md-12 tengah animated fadeInLeft" style="animation-delay: 1s;">
+                    <h1 class="text-center">Movies and Chill</h1>
+                    <h3 class="text-center">Love movies so much ? We provide bunch of genre to spend all day with your favorite ones </h3>
+                </div>
+                <div class="col-md-12 animated fadeInRight" style="animation-delay: 2s;" >
+                    <!--slider------------------->
+                    <ul id="autoWidth1" class="cs-hidden">
+                        <!--1------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Ant-Man.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/AntMan-logo.png" style="height: auto;" width="100px">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--2------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/DeadPool.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Deadpool-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--3------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/SpiderMan.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/SpiderMan-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            
+                            </li>
+                                    <!--4------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Venom.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Venom-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--5------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Thor.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Thor-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--6------------------------------>
+                            <li class="item-a">
+                    <!--slider-box-->
+                        <div class="box">
+                        <p class="marvel">MARVEL</p>
+                        <!--model-->
+                        <img class="model" src="img/IronMan.png">
+                        <!--details-->
+                        <div class="details">
+                        <!--logo-character-->
+                        <img class="logo" src="img/IronMan-logo.png">
+                        <!--character-details-->
+                        <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                        </div>
+                        
+                        </div>
+                            </li>
+                    </ul>   
+                </div>
             </div>
-          </li>
-          <li>
-            <img src="img/slider/music.jpg"> 
-            <div class="caption left-align">
-              <h2>Musics</h2>
-              <h5 class="light grey-text text-lighten-3"><b>Boost up your day with our music picks !</b></h5>
+        </div>
+    </div>
+    <!-- MUSICS -->
+    <div class="container">
+        <div class="container-kontent">
+            <div class="row">
+                <div class="col-md-4 tengah animated fadeInLeft" style="animation-delay: 1s;">
+                    <h1>Food of soul is musics</h1>
+                    <h3>Feed your soul with ton of musics to find your truly inner peace </h3>
+                </div>
+                <div class="col-md-8 animated fadeInRight" style="animation-delay: 2s;" >
+                    <!--slider------------------->
+                    <ul id="autoWidth2" class="cs-hidden">
+                        <!--1------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Ant-Man.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/AntMan-logo.png" style="height: auto;" width="100px">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--2------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/DeadPool.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Deadpool-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--3------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/SpiderMan.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/SpiderMan-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            
+                            </li>
+                                    <!--4------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Venom.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Venom-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--5------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Thor.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Thor-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--6------------------------------>
+                            <li class="item-a">
+                            <!--slider-box-->
+                                <div class="box">
+                                <p class="marvel">MARVEL</p>
+                                <!--model-->
+                                <img class="model" src="img/IronMan.png">
+                                <!--details-->
+                                <div class="details">
+                                <!--logo-character-->
+                                <img class="logo" src="img/IronMan-logo.png">
+                                <!--character-details-->
+                                <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                </div>
+                                
+                                </div>
+                            </li>
+                    </ul>   
+                </div>
             </div>
-          </li>
-          <li>
-            <img src="img/slider/book.jpg"> 
-            <div class="caption right-align">
-              <h2>Books</h2>
-              <h5 class="light grey-text text-lighten-3"><b>Wondering what to read? We'll bring you the list !</b></h5>
+        </div>
+    </div>
+    <!-- BOOKS -->
+    <div class="container">
+        <div class="container-kontent">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8 tengah animated fadeInLeft" style="animation-delay: 1s;">
+                    <h1 class="text-right">Drowning in your imagination</h1>
+                    <h3 class="text-right">Books bring your imagination to the next level tilll you feel drowning in it</h3>
+                </div>
+                <div class="col-md-8 col-md-pull-4 animated fadeInRight" style="animation-delay: 2s;" >
+                    <!--slider------------------->
+                    <ul id="autoWidth3" class="cs-hidden">
+                        <!--1------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Ant-Man.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/AntMan-logo.png" style="height: auto;" width="100px">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--2------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/DeadPool.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Deadpool-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--3------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/SpiderMan.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/SpiderMan-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            
+                            </li>
+                                    <!--4------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Venom.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Venom-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--5------------------------------>
+                            <li class="item-a">
+                                <!--slider-box-->
+                                    <div class="box">
+                                    <p class="marvel">MARVEL</p>
+                                    <!--model-->
+                                    <img class="model" src="img/Thor.png">
+                                    <!--details-->
+                                    <div class="details">
+                                    <!--logo-character-->
+                                    <img class="logo" src="img/Thor-logo.png">
+                                    <!--character-details-->
+                                    <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                    </div>
+                                    
+                                    </div>
+                            </li>
+                                    <!--6------------------------------>
+                            <li class="item-a">
+                            <!--slider-box-->
+                                <div class="box">
+                                <p class="marvel">MARVEL</p>
+                                <!--model-->
+                                <img class="model" src="img/IronMan.png">
+                                <!--details-->
+                                <div class="details">
+                                <!--logo-character-->
+                                <img class="logo" src="img/IronMan-logo.png">
+                                <!--character-details-->
+                                <p>Bruce Bayne invite deadpool to kill the enemy how make distrub bat To the Kill The Anymens How MaKE him will be ie.</p>
+                                </div>
+                                
+                                </div>
+                            </li>
+                    </ul>   
+                </div>
             </div>
-          </li>
-        </ul>
-      </div>
+        </div>
+    </div>
+    <!-- REVIEWS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .</p>
+                                        <small>Someone famous</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/mantia/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
+                        </li>
+                    </ol>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-
-      <!--JavaScript at end of body for optimized loading-->
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>
-        const sideNav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sideNav);
-        const slider = document.querySelectorAll('.slider');
-        M.Slider.init(slider, {
-          indicators: false,
-          height: 700,
-          transition: 500,
-          interval: 4000,
-        });
-      </script>
-    </body>
-  </html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+</body>
+</html>
