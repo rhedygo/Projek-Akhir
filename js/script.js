@@ -35,3 +35,7 @@ $(document).ready(function() {
         } 
     });  
   });
+
+  $("html, body").animate({ 
+      scrollTop: $('#movies').offset().top 
+    }, 1000);

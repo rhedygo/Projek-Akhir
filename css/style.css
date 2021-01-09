@@ -1,8 +1,36 @@
+/* youtube */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+	top: 10%;
+	bottom: 10%;
+	left: 10%;
+	right: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+/* body dll */
 body {
 	font-family: 'Poppins', sans-serif;
 }
+.row {
+	margin-right: 0px !important;
+	margin-left: 0px !important;
+}
 header .carousel-inner .item {
-	height: 100vh;
+	height: 109vh;
 }
 .navbar-inverse {
 	background-color: transparent;
@@ -60,6 +88,13 @@ header .carousel-inner .item {
 	background-color: #EDBB00;
 	border-color: #EDBB00;
 }
+.footer{
+	background-color: black;
+	text-align: center;
+	color: #fff;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
 
 /*responsive css untuk header slider*/
 
@@ -69,6 +104,18 @@ header .carousel-inner .item {
 	}
 	.carousel-caption h2 {
 		font-size: 50px;
+	}
+	header .carousel-inner .item {
+		height: 80vh;
+	}
+	.video-container iframe {
+		position: absolute;
+		top: 20%;
+		bottom: 10%;
+		left: 10%;
+		right: 10%;
+		width: 80%;
+		height: 80%;
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -91,6 +138,18 @@ header .carousel-inner .item {
 	.carousel-caption a {
 		padding: 10px 25px;
 	}
+	header .carousel-inner .item {
+		height: 50vh;
+	}
+	.video-container iframe {
+		position: absolute;
+		top: 30%;
+		bottom: 10%;
+		left: 10%;
+		right: 10%;
+		width: 8n0%;
+		height: 70%;
+	}
 }
 
 /* Slider */
@@ -105,15 +164,7 @@ ul{
 a{
 	text-decoration:none;
 }
-.container.kontent{
-	width:50%;
-	height: 100vh;
-	background-color:#a4152c;
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	
-}
+
 .box{
 	width:350px;
 	height:610px;
@@ -143,9 +194,9 @@ a{
 	font-weight: bold;
 	color:#6a6a74;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
 }
-.marvel{
+#genremovies{
 	color:#32323e;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -161,13 +212,47 @@ a{
 	transform: scale(1.02);
 	transition: all ease 0.3s;
 }
-.box:hover .marvel{
+.box:hover #genremovies{
 	color:#c0292b;
 	transition: all ease 0.5s;
 }
 
+#genremusics{
+	color:#32323e;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: bebas kai;
+	font-size: 25px;
+}
+.box:hover #genremusics{
+	color:#36c029;
+	transition: all ease 0.5s;
+}
+#genrebooks{
+	color:#32323e;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: bebas kai;
+	font-size: 25px;
+}
+.box:hover #genrebooks{
+	color:#297cc0;
+	transition: all ease 0.5s;
+}
 .tengah{
 	padding-top: 10%;
+}
+.midmed{
+	padding-top: 20%;
+	padding-bottom: 20%;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+.container-kontent{
+	padding-top: 8%;
+}
+.lSPrev {
+	color:black;
 }
 /*--responsive for mobile phone--*/
 @media(max-width:720px){
