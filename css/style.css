@@ -129,7 +129,7 @@ a{
 	margin: 20px 10px;
 }
 .model{
-	height: 350px;
+	height: 320px;
 	max-height: 100%;
 	max-width: 100%;
 }
@@ -204,7 +204,6 @@ a{
 }
 .container-kontent{
 	padding-top: 8%;
-
 }
 .lSPrev {
 	color:black;
@@ -267,7 +266,7 @@ a{
 		height: 500px;
 	}
 	.model{
-		height:250px;
+		height:320px;
 	}
 	.details p{
 		font-size: 16px;
@@ -307,7 +306,7 @@ a{
 		height: 500px;
 	}
 	.model{
-		height:250px;
+		height:320px;
 	}
 	.details p{
 		font-size: 16px;
