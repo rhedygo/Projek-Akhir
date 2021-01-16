@@ -137,18 +137,15 @@ a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 300px;
+	width: 306px;
+	height: 315px;
+	font-family: calibri;
 }
 .details p{
-	font-family: calibri;
 	font-weight: bold;
 	color:#6a6a74;
 	text-align: justify;
-	margin-top: 10px;
-}
-.details h3{
-	text-align: center;
-	font-family: calibri;
+
 }
 #genremovies{
 	color:#32323e;
@@ -307,6 +304,10 @@ a{
 	}
 	.model{
 		height:320px;
+	}
+	.details{
+		width: 306px;
+		height: 315px;
 	}
 	.details p{
 		font-size: 16px;
