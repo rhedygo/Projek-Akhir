@@ -10,11 +10,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">    
     <link rel="stylesheet" href="css/lightslider.css">
-    <script src="js/JQuery3.3.1.js"></script>
-    <script src="js/lightslider.js"></script>
-    <script src="js/script.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body style="background-color: #7a7a7a;">
 
     <header>
@@ -95,11 +93,11 @@
     <div class="container">
         <div id="movies"class="container-kontent">
             <div class="row">
-                <div class="col-md-12 animated fadeInLeft" style="animation-delay: 1s;">
+                <div class="col-md-12" data-aos="fade-left">
                     <h1 class="text-center">Movies and Chill</h1>
                     <h3 class="text-center">Love movies so much ? We provide bunch of genre to spend all day with your favorite ones </h3>
                 </div>
-                <div class="col-md-12 animated fadeInRight" style="animation-delay: 2s;" >
+                <div class="col-md-12" data-aos="fade-right" >
                     <!--slider------------------->
                     <ul id="autoWidth1" class="cs-hidden">
                         <!--1------------------------------>
@@ -175,11 +173,11 @@
     <div id="musics" class="container">
         <div class="container-kontent"> 
             <div class="row">
-                <div class="col-md-4 tengah animated fadeInLeft" style="animation-delay: 1s;">
+                <div class="col-md-4 tengah" data-aos="fade-right">
                     <h1>Food of soul is musics</h1>
                     <h3>Feed your soul with ton of musics to find your truly inner peace </h3>
                 </div>
-                <div class="col-md-8 animated fadeInRight" style="animation-delay: 2s;" >
+                <div class="col-md-8 animated" data-aos="fade-left" >
                     <!--slider------------------->
                     <ul id="autoWidth2" class="cs-hidden">
                         <!--1------------------------------>
@@ -289,11 +287,11 @@
     <div id="books" class="container">
         <div class="container-kontent">
             <div class="row">
-                <div class="col-md-4 col-md-push-8 tengah animated fadeInLeft" style="animation-delay: 1s;">
+                <div class="col-md-4 col-md-push-8" data-aos="fade-left">
                     <h1 class="text-right">Drowning in your imagination</h1>
                     <h3 class="text-right">Books bring your imagination to the next level tilll you feel drowning in it</h3>
                 </div>
-                <div class="col-md-8 col-md-pull-4 animated fadeInRight" style="animation-delay: 2s;" >
+                <div class="col-md-8 col-md-pull-4" data-aos="fade-right" >
                     <!--slider------------------->
                     <ul id="autoWidth3" class="cs-hidden">
                         <!--1------------------------------>
@@ -477,5 +475,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/JQuery3.3.1.js"></script>
     <script src="js/lightslider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

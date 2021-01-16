@@ -1,6 +1,6 @@
 // JavaScript Document
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 100) {
+    if ($(window).scrollTop() >= 50) {
         $('.navbar').css('background', 'black');
     } else {
         $('.navbar').css('background', 'transparent');
@@ -36,6 +36,14 @@ $(document).ready(function() {
     });  
   });
 
-  $("html, body").animate({ 
-      scrollTop: $('#movies').offset().top 
-    }, 1000);
+//   $("html, body").animate({ 
+//       scrollTop: $('#movies').offset().top 
+//     }, 1000);
+
+$(function() {
+    AOS.init({
+        offset: 500, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+    });
+});

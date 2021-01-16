@@ -106,7 +106,7 @@ a{
 }
 
 .box{
-	width:350px;
+	width:330px;
 	height:610px;
 	background-color:#1e1e26;
 	border-radius: 10px;
@@ -248,7 +248,7 @@ a{
     margin-right: 10px;
 }
 
-/*responsive css untuk header slider*/
+/*responsive mobile tab and phone*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.box{
@@ -262,7 +262,10 @@ a{
 		font-size: 16px;
 		width: 250px;
 	}
-	.h1{
+	.container-kontent h1{
+		text-align: center;
+	}
+	.container-kontent h3{
 		text-align: center;
 	}
 	.carousel-caption {
@@ -329,5 +332,11 @@ a{
 		right: 10%;
 		width: 80%;
 		height: 70%;
+	}
+	.container-kontent h1{
+		text-align: center;
+	}
+	.container-kontent h3{
+		text-align: center;
 	}
 }
