@@ -22,9 +22,6 @@
 }
 
 /* body dll */
-html{
-	scroll-behavior: smooth;
-}
 body {
 	font-family: 'Poppins', sans-serif;
 }
@@ -61,7 +58,7 @@ header .carousel-inner .item {
 	height: 100vh;
 }
 .carousel-caption {
-	padding-bottom: 300px;
+	padding-bottom: 45vh;
 	font-family: poppins;
 }
 .carousel-caption h2 {
@@ -87,19 +84,13 @@ header .carousel-inner .item {
 .carousel-control.left {
 	background-image: none;
 }
-.carousel-indicators .active {
-	background-color: #EDBB00;
-	border-color: #EDBB00;
-}
 .footer{
 	background-color: black;
 	text-align: center;
 	color: #fff;
-	/* padding-top: 1%;
-	padding-bottom: 1%; */
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
-
-
 
 /* Slider */
 
@@ -142,11 +133,12 @@ a{
 	font-family: calibri;
 	font-weight: bold;
 	color:#6a6a74;
-	text-align: center;
+	text-align: justify;
 	margin-top: 10px;
 }
 .details h3{
-	text-align:center;
+	text-align: center;
+	font-family: calibri;
 }
 #genremovies{
 	color:#32323e;
@@ -206,7 +198,6 @@ a{
 .lSPrev {
 	color:black;
 }
-
 /* testIMONIES */
 
 #quote-carousel {
@@ -257,12 +248,12 @@ a{
     margin-right: 10px;
 }
 
-/*responsive css*/
+/*responsive css untuk header slider*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.box{
 		width: 300px;
-		height: 100%;
+		height: 500px;
 	}
 	.model{
 		height:250px;
@@ -274,29 +265,14 @@ a{
 	.h1{
 		text-align: center;
 	}
-	#genremovies{
-		color:#c0292b;
-	}
-	#genremusics{
-		color:#36c029;
-	}
-	#genrebooks{
-		color:#297cc0;
-	}
-	.row h1{
-		text-align:center;
-	}
-	.row h3{
-		text-align:center;
-	}
 	.carousel-caption {
-		padding-bottom: 30%;
+		padding-bottom: 45vh;
 	}
 	.carousel-caption h2 {
 		font-size: 50px;
 	}
 	header .carousel-inner .item {
-		height: 80vh;
+		height: 100vh;
 	}
 	.video-container iframe {
 		position: absolute;
@@ -309,40 +285,9 @@ a{
 	}
 }
 @media only screen and (max-width: 767px) {
-	.navbar-inverse .navbar-brand {
-		font-size: 30px;
-		padding: 20px 15px;
-	}
-	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.carousel-caption {
-		padding-bottom: 35%
-	}
-	.carousel-caption h2 {
-		font-size: 25px;
-	}
-	.carousel-caption h3 {
-		font-size: 18px;
-	}
-	.carousel-caption a {
-		padding: 10px 25px;
-	}
-	header .carousel-inner .item {
-		height: 50vh;
-	}
-	.video-container iframe {
-		position: absolute;
-		top: 30%;
-		bottom: 10%;
-		left: 10%;
-		right: 10%;
-		width: 8n0%;
-		height: 70%;
-	}
 	.box{
 		width: 300px;
-		height: 550px;
+		height: 500px;
 	}
 	.model{
 		height:250px;
@@ -354,19 +299,35 @@ a{
 	.h1{
 		text-align: center;
 	}
-	.row h1{
-		text-align:center;
+	.navbar-inverse .navbar-brand {
+		font-size: 30px;
+		padding: 20px 15px;
 	}
-	.row h3{
-		text-align:center;
+	.navbar-collapse {
+		background: rgba(0, 0, 0, 0.5);
 	}
-	#genremovies{
-		color:#c0292b;
+	.carousel-caption {
+		padding-bottom: 40vh;
 	}
-	#genremusics{
-		color:#36c029;
+	.carousel-caption h2 {
+		font-size: 25px;
 	}
-	#genrebooks{
-		color:#297cc0;
+	.carousel-caption h3 {
+		font-size: 18px;
+	}
+	.carousel-caption a {
+		padding: 10px 25px;
+	}
+	header .carousel-inner .item {
+		height: 100vh;
+	}
+	.video-container iframe {
+		position: absolute;
+		top: 30%;
+		bottom: 10%;
+		left: 10%;
+		right: 10%;
+		width: 80%;
+		height: 70%;
 	}
 }
