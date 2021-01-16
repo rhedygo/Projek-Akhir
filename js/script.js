@@ -1,6 +1,6 @@
 // JavaScript Document
 $(window).scroll(function () {
-    if ($(window).scrollTop() >= 100) {
+    if ($(window).scrollTop() >= 50) {
         $('.navbar').css('background', 'black');
     } else {
         $('.navbar').css('background', 'transparent');
