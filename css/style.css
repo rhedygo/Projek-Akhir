@@ -242,7 +242,7 @@ a{
     margin: 0;
 }
 .item blockquote p:before {
-    content: "\f10d";
+    content: none;
     font-family: 'Fontawesome';
     float: left;
     margin-right: 10px;
